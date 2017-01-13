@@ -29,6 +29,18 @@
         $second->add_grade(80);
         $second->add_grade(50);
         $students['a456'] = $second;
+
+        $third = new Student();
+        $third->surname = "Wang";
+        $third->first_name = "Wayne";
+        $third->add_email('home','wsyccf@gmail.com');
+        $third->add_email('work1','swang197@mybcit.ca');
+        $third->add_email('work2','wsyccc@kdcanadavinyl.com');
+        $third->add_grade(100);
+        $third->add_grade(99);
+        $third->add_grade(98);
+        $students['b567'] = $third;
+
         ksort($students);
         foreach($students as $student)
             echo $student->toString();

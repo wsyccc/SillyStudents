@@ -16,7 +16,7 @@ class Student
         $this->grades = array();
     }
 
-    function add_eamil($which,$address){
+    function add_email($which,$address){
         $this->emails[$which] = $address;
     }
 
